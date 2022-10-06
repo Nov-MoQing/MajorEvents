@@ -27,6 +27,9 @@ a {
 
 
 .userinfo {
+  display: flex;
+  justify-content:center;
+  align-items: center;
   height: 60px;
   text-align: center;
   user-select: none;
@@ -37,22 +40,20 @@ a {
 }
 
 .layui-nav-img {
+  display: none;
   width: 40px;
   height: 40px;
 }
 .avatar {
-  display: inline-block !important;
+  display: none;
   width: 40px;
   height: 40px;
   position: relative;
   top: 4px;
-  text-align: center;
-  line-height: 40px;
   background-color: #009688;
   border-radius: 50%;
   font-size: 20px;
   margin-right: 10px;
-  display:none;
 }
 .bia {
   margin: 0 5px;

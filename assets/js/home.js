@@ -20,7 +20,7 @@ const gitAvatar = (data) => {
 
   if (data.user_pic) {
     $('.avatar').hide()
-    $('.layui-nav-img').css(src,data.user_pic).show()
+    $('.layui-nav-img').css('src',data.user_pic).show()
   } else {
     $('.layui-nav-img').hide()
     const char = data.username.charAt(0).toUpperCase()
