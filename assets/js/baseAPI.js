@@ -5,7 +5,7 @@ $.ajaxPrefilter(function (config) {
     let target = {}
     sourec.split('&').forEach(el => {
       let k = el.split('=')
-      target[k[0]] = k[1]
+      target[k[0]] = decodeURIComponent(k[1])
     })
     return JSON.stringify(target)
   }

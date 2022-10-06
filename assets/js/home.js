@@ -3,12 +3,11 @@ $(function () {
   gitUser()
 
 })
-const gitUser = () => {
+function gitUser() {
   $.ajax({
     method: 'GET',
     url: '/my/userinfo',
     success(res) {
-      console.log(res)
       if (res.code !== 0) layer.msg(res.message)
       gitAvatar(res.data)
     }
